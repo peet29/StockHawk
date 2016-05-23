@@ -168,6 +168,12 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
 
 
     @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("check","Pause");
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
         getLoaderManager().restartLoader(CURSOR_LOADER_ID, null, this);
