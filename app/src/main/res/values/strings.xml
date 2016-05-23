@@ -10,4 +10,8 @@
     <string name="input_hint" translatable="false">FB</string>
     <string name="input_prefill"></string>
     <string name="network_toast">Uh-oh! This app requires an internet connection</string>
+
+    <!-- content descriptions -->
+    <string name="content_chart">Show a chart</string>
+    <string name="content_float">A Float to add Symbol</string>
 </resources>
