@@ -13,6 +13,7 @@ import com.sam_chordas.android.stockhawk.R;
 import com.sam_chordas.android.stockhawk.data.QuoteColumns;
 import com.sam_chordas.android.stockhawk.data.QuoteDatabase;
 import com.sam_chordas.android.stockhawk.data.QuoteProvider;
+import com.sam_chordas.android.stockhawk.ui.MyStocksActivity;
 
 /**
  * Created by peet29 on 24/5/2559.
@@ -72,9 +73,6 @@ public class StockWidgetRemoteViewsService extends RemoteViewsService {
                         data == null || !data.moveToPosition(position)) {
                     return null;
                 }
-
-                Log.d("data Symbol colum",String.valueOf(data.getColumnIndex("symbol")));
-                Log.d("data Symbol",data.getString(data.getColumnIndex("symbol")));
                 String symbol = data.getString(data.getColumnIndex("symbol"));
                 String bidPrice = data.getString(data.getColumnIndex("bid_price"));
                 String change = data.getString(data.getColumnIndex("change"));
@@ -92,6 +90,9 @@ public class StockWidgetRemoteViewsService extends RemoteViewsService {
                 }
 
 
+                final Intent fillInIntent = new Intent();
+                fillInIntent.putExtra(MyStocksActivity.Symbol_key,symbol);
+                views.setOnClickFillInIntent(R.id.stock_list, fillInIntent);
                 return views;
             }
 
