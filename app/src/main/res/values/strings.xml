@@ -8,10 +8,14 @@
     <string name="symbol_search">Symbol Search</string>
     <string name="content_test">Search for a Stock Symbol</string>
     <string name="input_hint" translatable="false">FB</string>
-    <string name="input_prefill"></string>
+    <string name="input_prefill" translatable="false"></string>
     <string name="network_toast">Uh-oh! This app requires an internet connection</string>
 
     <!-- content descriptions -->
     <string name="content_chart">Show a chart</string>
     <string name="content_float">A Float to add Symbol</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="empty_stock_list">No Stock Information Available</string>
 </resources>
