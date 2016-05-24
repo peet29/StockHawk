@@ -7,15 +7,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#bbDEDFDE"
+        android:background="#37474F"
         android:orientation="vertical" >
 
         <LinearLayout
             android:id="@+id/widget"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#aaDEDFDE"
+            android:background="@color/material_blue_500"
             android:orientation="horizontal"
+            android:minHeight="20dp"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" >
 
@@ -41,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/app_name"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="#4B4B4D"
+                    android:textColor="@android:color/white"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
@@ -49,7 +50,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#aaa" />
+            android:background="@color/material_blue_700" />
 
         <ListView
             android:id="@+id/widget_list"
