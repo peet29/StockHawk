@@ -50,7 +50,7 @@ public class GraphActivity extends AppCompatActivity implements LoaderManager.Lo
     }
 
     @Override
-    public Loader<Cursor> onCreateLoader(int id, Bundle args) {
+    public Loader<Cursor> onCreateLoader(int id, Bundle args)   {
         String select = "(("+QuoteColumns.ISCURRENT + " = ? ) AND ("+QuoteColumns.SYMBOL + " = ? ))";
         return new CursorLoader(this, QuoteProvider.Quotes.CONTENT_URI,
                 new String[]{ QuoteColumns._ID, QuoteColumns.SYMBOL, QuoteColumns.BIDPRICE,
